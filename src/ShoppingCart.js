@@ -18,8 +18,12 @@ class ShoppingCart {
   clear() {
     this.items = []
   }
+
+  clone() {
+
+  }
 }
-// getItems()
+
 
 
 
