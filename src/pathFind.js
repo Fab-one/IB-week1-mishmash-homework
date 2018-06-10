@@ -1,17 +1,14 @@
-function pathFind(path, object) {
+function pathFind(path, obj) {
 
-
-
-
-      const obj = {}
           path
-            .filter(p => p.object === object)
-            .forEach(p =>
-                obj[p.id] = pathFind(path, p.id))
-        return obj
-        return path
-}
+            .filter(pathLayer => pathLayer.obj === obj)
+            .map(pathLayer =>
+                obj[pathLayer.id] = pathFind(path, pathLayer.id))
+          return obj["foo"]
 
+
+
+}
 
 
 module.exports = { pathFind }
