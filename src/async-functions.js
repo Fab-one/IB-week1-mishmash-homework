@@ -1,14 +1,16 @@
-function giveItBackLater(value, callback) {
+const giveItBackLater = (value, callback) => {
           callback(value)
-}
+        }
 setTimeout(giveItBackLater, 2000)
 
-function promiseToGiveItBackLater(value) {
+const promiseToGiveItBackLater = (value) => {
+
 
 }
 
-function addSomePromises(somePromise) {
 
-}
+const addSomePromises = (somePromise) => {
+
+  }
 
 module.exports = {  giveItBackLater, addSomePromises, promiseToGiveItBackLater}
